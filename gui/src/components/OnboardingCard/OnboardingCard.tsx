@@ -38,7 +38,8 @@ export function OnboardingCard(props: OnboardingCardProps) {
   }
 
   if (getLocalStorage("onboardingStatus") === undefined) {
-    setLocalStorage("onboardingStatus", "Started");
+    // Marking as Completed for Jetify Devspaces
+    setLocalStorage("onboardingStatus", "Completed");
   }
 
   return (

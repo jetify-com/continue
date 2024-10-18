@@ -39,6 +39,9 @@ export function useOnboardingCard(): UseOnboardingCard {
     show = onboardingStatus !== "Completed" && !hasDismissedOnboardingCard;
   }
 
+  // No need to show for Jetify
+  show = false;
+
   function open(tab: TabTitle) {
     navigate("/");
 
